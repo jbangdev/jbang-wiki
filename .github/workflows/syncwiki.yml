@@ -17,8 +17,8 @@ jobs:
         git init
         git config --local user.email "max@xam.dk"
         git config --local user.name "Max Rydahl Andersen"
-        git remote add origin https://${{secrets.WIKI_USER}}:${{secrets.WIKI_PAT}}@github.com/jbangdev/jbangdev-wiki.git
-        git remote add upstream https://${{secrets.WIKI_USER}}:${{secrets.WIKI_PAT}}@github.com/jbangdev/jbangdev.wiki.git
+        git remote add origin https://${{secrets.WIKI_USER}}:${{secrets.WIKI_PAT}}@github.com/jbangdev/jbang-wiki.git
+        git remote add upstream https://${{secrets.WIKI_USER}}:${{secrets.WIKI_PAT}}@github.com/jbangdev/jbang.wiki.git
         git fetch origin
         git fetch upstream
         git merge origin/master --no-edit
